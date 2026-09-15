@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dcc16tu4lbamv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyc6d"]
+size = Vector2(40, 55)
+
+[node name="Jogador" type="CharacterBody2D" unique_id=388021951]
+
+[node name="corpo" type="Polygon2D" parent="." unique_id=2012136269]
+color = Color(0.08235294, 0.39607844, 0.7529412, 1)
+polygon = PackedVector2Array(5, 20, -10, 19, -20, -2, -17, -16, -6, -27, 2, -26, 8, -16, 10, -1)
+
+[node name="colisao" type="CollisionShape2D" parent="." unique_id=1939462045]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_gyc6d")
